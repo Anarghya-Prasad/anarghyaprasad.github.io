@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anarghya Prasad - Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Inter', sans-serif;
+      line-height: 1.7;
+      color: #e5e7eb;              /* light gray text */
+      background: #000000;         /* pure black background */
+    }
+
+    header, section {
+      padding: 60px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    header {
+      text-align: center;
+      background: #0a0a0a;         /* near black */
+      border-bottom: 1px solid #1f2937;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.8);
+      border-radius: 0 0 12px 12px;
+    }
+
+    header img {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 15px;
+      border: 3px solid #0ea5e9;
+      background: #111;
+    }
+
+    header h1 {
+      font-size: 2.0rem;
+      margin-bottom: 8px;
+      color: #ffffff;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      color: #9ca3af;
+      margin-bottom: 12px;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      margin-top: 20px;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #f3f4f6;
+      font-weight: 500;
+      padding: 8px 14px;
+      border-radius: 6px;
+      transition: background .3s, color .3s;
+    }
+
+    nav a:hover {
+      background: #0ea5e9;
+      color: #000;
+    }
+
+    h2 {
+      font-size: 1.6rem;
+      margin-bottom: 20px;
+      color: #f9fafb;
+      border-bottom: 2px solid #0ea5e9;
+      display: inline-block;
+      padding-bottom: 4px;
+    }
+
+    .grid { display: grid; gap: 20px; }
+    .grid-2 { grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); }
+
+    .card {
+      background: #0f0f0f;          /* deep black cards */
+      border: 1px solid #1f2937;
+      border-radius: 12px;
+      padding: 24px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.8);
+      transition: transform .3s, background .3s;
+    }
+    .card:hover {
+      transform: translateY(-4px);
+      background: #1a1a1a;
+    }
+
+    ul { padding-left: 20px; }
+    ul li { margin-bottom: 10px; }
+
+    strong { color: #0ea5e9; }
+    a { color: #38bdf8; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 0.9rem;
+      color: #9ca3af;
+      border-top: 1px solid #1f2937;
+      margin-top: 40px;
+      background: #0a0a0a;
+      border-radius: 12px 12px 0 0;
+    }
+
+    @media(max-width: 600px){
+      header h1 { font-size: 1.8rem; }
+      header img { width: 100px; height: 100px; }
+      h2 { font-size: 1.5rem; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <!-- Replace profile.jpg with your actual photo -->
+    <img src="profile.jpg" alt="Anarghya Prasad Photo">
+    <h1>Anarghya Prasad</h1>
+    <p>Industrial Engineer• Supply Chain Analyst • Data & Automation • National Level Water Polo Player</p>
+    <nav>
+      <a href="#academics">Academics</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+      <a href="https://docs.google.com/document/d/1IJfdn0sQbbV1d2Pn6AWDt7SqdSdXwW1VuKKg_lT7ync/preview" target="_blank">Résumé</a>
+    </nav>
+  </header>
+
+  <section id="academics">
+    <h2>Academics</h2>
+    <div class="grid grid-2">
+      <div class="card">
+        <h3>M.SC., Industrial Systems Engineering</h3>
+        <p>San José State University (2020 – 2022)</p>
+        <ul>
+          <li><strong>Specialization in Supply Chain management</strong> with Data Analytics, Operations Research, and Lean Six Sigma.</li>
+          <li>Coursework: Systems Engineering, Operations Analysis, Quality Assurance & Reliability, Lean six sigma.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>B.E., Industrial Engineering & Management</h3>
+        <p>JSSATE, VTU, Bangalore (2014 – 2018)</p>
+        <ul>
+          <li>Core focus: Supply Chain Management, Software management, Manufacturing Processes.</li>
+          <li>Emphasis on Total Quality Management, Statistical Quality Control and Probability distribution and Simulations modelling.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="grid grid-2">
+      <div class="card">
+        <h3>Data Analysis & Automation</h3>
+        <ul>
+          <li><strong>Python</strong>, Excel/VBA, SQL,Power BI</li>
+          <li>Data visualization, predictive analytics, dashboarding</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Supply Chain / ERP Tools</h3>
+        <ul>
+          <li><strong>SAP S/4HANA (MM/PM)</strong> for Work Orders, CTB analysis, inventory optimization</li>
+          <li>Min/Max threshold planning and automation</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Process Improvement</h3>
+        <ul>
+          <li>Certified <strong>Lean Six Sigma Green Belt</strong></li>
+          <li>8D,DMAIC,5S,RCA, FMEA, Continuous Improvement</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience">
+    <h2>Work Experience</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Material Control Analyst – Quanta Computer Inc. (2022 – Present)</h3>
+        <ul>
+          <li><strong>Led NPI demand & supply planning</strong> for Google’s datacenter hardware builds; ensured 100% on-time launches.</li>
+          <li>Automated SAP S/4HANA processes: work orders, rework loops, inventory transfers; <strong>cut lead times significantly</strong>.</li>
+          <li>Forecasted and optimized <strong>dynamic Min/Max thresholds</strong> to prevent downtime.</li>
+          <li>Developed Python-based CTB analysis automation, <strong>reducing manual effort by 70%</strong>.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Industrial Engineer – Target & Projects (2018 – 2022)</h3>
+        <ul>
+          <li>Optimized <strong>space planning and inventory control</strong> through Lean Six Sigma, reducing waste and defects.</li>
+          <li>Implemented process improvements to <strong>reduce cycle times</strong> and boost efficiency across departments.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Other Experience</h3>
+        <ul>
+          <li>Operations and project management in catering and hospitality, applying industrial engineering for efficiency.</li>
+          <li>Academic projects: supply chain strategy analysis, lean six sigma, operations analytics using Python, and systems engineering design.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="grid grid-2">
+      <div class="card">
+        <h3>Truck Movement Optimization</h3>
+        <p>Designed a prototype model to <strong>optimize truck scheduling and dock utilization</strong> with mathematical formulations and Python simulations, reducing material delays.</p>
+      </div>
+      <div class="card">
+        <h3>Clear-to-Build (CTB) Automation</h3>
+        <p>Built a Python pipeline to ingest ERP data, validate material readiness, and publish dashboards to Google Sheets, <strong>streamlining CTB reporting</strong>.</p>
+      </div>
+      <div class="card">
+        <h3>Min/Max Adaptive Thresholds</h3>
+        <p>Developed an adaptive algorithm to calculate dynamic inventory thresholds for high fall-out components, <strong>minimizing production downtime</strong>.</p>
+      </div>
+      <div class="card">
+        <h3>Drone-based Inventory Management</h3>
+        <p>Deployed drone-based warehouse scanning systems, created <strong>error taxonomy</strong>, and automated reports, enhancing accuracy in cycle counts.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <div class="grid">
+      <div class="card">
+        <p>If you'd like to connect, reach out via email or LinkedIn:</p>
+        <ul>
+          <li>📧 Email: <a href="mailto:anarghya.prasad1996@gmail.com">anarghya.prasad1996@gmail.com</a></li>
+          <li>🔗 LinkedIn: <a href="https://www.linkedin.com/in/prasad-anarghya" target="_blank">linkedin.com/in/prasad-anarghya</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Anarghya Prasad. All rights reserved.</p>
+  </footer>
+</body>
+</html>
